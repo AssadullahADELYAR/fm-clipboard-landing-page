@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: rgb(97, 115, 255);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--Grayish-Blue);
+}
+.container-sm {
+  max-width: 685px;
+}
+img {
+  max-width: 100%;
+}
+p {
+  margin-bottom: 40px;
+}
+h1,
+h2,
+h3 {
+  color: var(--Dark-Grayish-Blue);
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+a {
+  text-decoration: none;
+}
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.btn {
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 60px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.btn-primary {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0px 2px 5px rgba(38, 186, 164, 0.5);
+}
+.btn-primary:hover {
+  box-shadow: 0px 2px 20px rgba(38, 186, 164, 0.5);
+}
+.btn-secondary {
+  background-color: var(--Light-Blue);
+  box-shadow: 0px 2px 5px rgba(97, 115, 255, 0.5);
+}
+.btn-secondary:hover {
+  box-shadow: 0px 2px 20px rgba(97, 115, 255, 0.5);
+}
+.header {
+  background-image: url(images/bg-header-desktop.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ********************* SECTION SNIPETS *********************** */
+.snipets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.snipets-head {
+  text-align: center;
+}
+.snipets-data {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.snipets-data-image {
+  overflow-x: hidden;
+}
+.snipets-data-image img {
+  transform: translateX(-30px);
+}
+
+.snipets-data-text {
+  padding: 65px;
+  width: 80%;
+}
+
+/* ********************* SECTION CLIPBOARD *********************** */
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+}
+
+/* ********************* SECTION WORKFLOW *********************** */
+.workflow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1210px;
+}
+.workflow-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+/* .workflow-data-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 320px;
+} */
+.workflow-data-item img {
+  height: 32px;
+  margin-bottom: 20px;
+}
+/* ********************* SECTION LOGOS *********************** */
+
+.logos {
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ********************* SECTION DOWNLOAD *********************** */
+
+.download {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ********************* SECTION FOOTER *********************** */
+.footer {
+  background-color: #eee;
+}
+.footer-container {
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo img {
+  height: 50px;
+  width: 50px;
+}
+.footer-nav {
+  list-style: none;
+  display: grid;
+  max-width: 600px;
+  grid-template-columns: 180px 180px 180px;
+  row-gap: 10px;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+.footer-nav a:hover {
+  color: var(--Strong-Cyan);
+}
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-icon svg:hover .icons {
+  fill: var(--Strong-Cyan);
+}
+.icons {
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .snipets-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .snipets-data-image {
+    padding: 0 65px;
+  }
+  .snipets-data-image img {
+    transform: translateX(0);
+  }
+  .snipets-data-text {
+    padding-top: 65px;
+    width: 100%;
+  }
+  .workflow-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+  }
+  .logos {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .social-icon {
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .btn {
+    padding: 12px 35px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .btn-container {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+  .snipets-data-image {
+    padding: 0 30px;
+  }
+  .snipets-data-image img {
+    transform: translateX(0);
+  }
+  .snipets-data-text {
+    padding: 50px 0 0 0;
+  }
+  .workflow-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+  }
+  .logos {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-nav {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    text-align: center;
+  }
+}
